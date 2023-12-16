@@ -17,6 +17,10 @@
     --sp_text_l_grey:#D2D2D2;
     }
 
+body{
+   font-family: Figtree;
+}
+
     img
 {
 	max-width: 100%;
@@ -26,6 +30,11 @@
     position: relative;
     height: 100vh;
     width:100vw;
+}
+
+a{
+   text-decoration: none;
+   color: inherit;
 }
 
     
@@ -159,7 +168,7 @@
 
 .navigation_panel{
     width:100%;
-    height:90%;
+    height:calc(100vh - 80px);
 }
 
 /* #region App_top_bar */
@@ -167,6 +176,7 @@
 
 .app_top_bar
 {
+   position: fixed;
     width:100%;
     height:80px;
     background-color:var(--sp_dark_blue);
@@ -200,23 +210,123 @@
     width:200px;
     background-color:var(--sp_black);
     color:var(--sp_text_d_grey);
-    height:100%;
-
-    position:absolute;
+    height:calc(100vh - 80px );
+    position:fixed;
     top:0;
     left:0;
     z-index: 999;
+    overflow-y:hidden;
+    font-size: 14px;
 }
 
 .top_aside_bar{
-    padding:1.25rem;
+    padding:1.25rem 1rem;
     height:80px;
+   
 }
 
 .logo_lg_md_s{
    width:120px;   
 }
 
+.main_aside_bar{
+
+   padding: 0.5rem 0.5rem;
+   
+
+   & span{
+      padding-left: 0.5rem;
+   }
+
+
+}
+
+.main_aside_bar a img{
+   width: 30px;
+}
+
+.aside_nav{
+   margin-bottom: 1rem;
+}
+
+.aside_nav_xs{
+   display: none;
+}
+
+.aside_section_playlist{
+   padding: 0.5rem;
+
+   
+
+   & li {
+      margin-bottom: 1rem;
+      list-style-type: none;
+   }
+
+   & h3 {
+      margin-bottom: 1rem;
+      text-transform: uppercase;
+   }
+}
+
+
+
+.square_icon{
+   display: inline-block;
+   border: 2px var(--sp_text_l_grey);
+   background-color: var(--sp_text_l_grey);
+   padding:0.25rem;
+
+   & i{
+      color: var(--sp_black);
+   }
+}
+
+.bottom_aside_bar {
+
+   padding: 1rem;
+   margin-top: 5rem;
+   
+   
+   
+   & img {
+      width: 18px !important;
+   }
+
+   & hr {
+      margin-bottom: 0.5rem;
+   }
+
+   
+
+   
+
+   
+  
+}
+
+.aside_download_section, .aside_profile_section {
+
+   gap:1rem;
+   padding-bottom: 0.5rem;
+
+}
+
+.aside_profile_section img{
+   background-color:var(--sp_text_d_grey);
+   border-radius: 50%;
+   padding:5px;
+   
+}
+
+
+
+
+
+
+
+
+ 
 /* #endregion App_aside_bar */
 
 /* #region App_main_panel */
@@ -237,10 +347,10 @@
 
 /* #region Player_Panel */
 
-.app_player_panel{
+.player_panel{
     background-color: var(--sp_dark_grey);
     width: 100%;
-    height:10%;
+    height:80px;
     position:fixed;
     z-index: 1000;
 }
@@ -260,7 +370,7 @@
 
    .top_aside_bar{
       justify-content: center;
-      padding:0.25rem;
+      padding:0.5rem 0.25rem;
    }
 
 
@@ -276,7 +386,15 @@
       
     }
 
+    .aside_nav{
+      display: none;
+    }
 
+    .aside_nav_xs{
+      display: block;
+      margin-top: -2.5rem;
+      
+    }
    
 }
 
