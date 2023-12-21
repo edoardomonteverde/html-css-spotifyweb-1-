@@ -80,6 +80,10 @@ ul {
 	justify-content: space-between;
 }
 
+.justify-content-end {
+   justify-content: flex-end;
+}
+
 .align-items-center
 {
 	align-items: center;
@@ -503,6 +507,128 @@ ul {
     bottom: 0;
     left: 0;
 }
+
+
+.current_song_section {
+
+   padding:1rem;
+   width: 200px;
+
+  
+
+   & .current_song_cover {
+      width: 40px;
+      margin-right: 1rem;
+
+   }
+
+   & .song_details {
+      font-size: 12px;
+   }
+
+   & .artist {
+      color:var(--sp_white)
+   }
+
+   & .song_name {
+      color: var(--sp_text_d_grey);
+   }
+
+   }
+
+   .song_options{
+      padding: 1rem;
+      font-size: 12px;
+      color: var(--sp_text_d_grey);
+      & i{
+         margin-bottom: 0.2rem;
+      }
+   }
+
+   .player_nav{
+
+      width:40%;
+    }
+
+   .playbar{
+      color: var(--sp_white);
+      margin-bottom: 1rem;
+   }
+
+   .playbar i {
+      font-size:1.25rem;
+      padding: 0rem 1rem;
+   }
+
+   .playbar i:nth-child(3) { 
+
+      transform: scale(1.5);
+      padding: 0rem 1rem;
+
+   }
+
+   .current_duration {
+      padding-right: 1rem;
+      color: var(--sp_white);
+
+   }
+
+   .song_timer p {
+      font-size: 12px;
+   }
+
+
+   .time_bar {
+
+      background-color: var(--sp_text_d_grey);
+      height:0.2rem;
+      width:100%;
+         
+   }
+
+   .current_time {
+      
+      width: 30%;
+      height: 0.2rem;
+      background-color: var(--sp_white);
+   }
+
+   .total_duration{
+      padding-left:1rem;
+      color: var(--sp_white);
+   }
+
+   .audio_control_section{
+      width:200px;
+      padding:1rem;
+      font-size: 12px;
+      
+      & i {
+         color: var(--sp_white);
+         margin-right:0.5rem;
+      }
+   }
+
+   .volume_area{
+      
+    
+   }
+
+   .volume_bar{
+      width: 50px;
+      height: 0.1rem;
+      background-color: var(--sp_text_d_grey);
+   
+   }
+
+   .current_volume{
+      width:20%;
+      height: 0.1rem;
+      background-color: var(--sp_white);
+   }
+
+
+
 /* #endregion Player_Panel */
 
 
