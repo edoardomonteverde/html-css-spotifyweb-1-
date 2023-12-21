@@ -333,6 +333,10 @@ ul {
    
 }
 
+.bottom_aside_bar_xs {
+   display: none;
+}
+
 
 
 
@@ -669,6 +673,39 @@ ul {
       display: block;
       margin-top: -2.5rem;
       
+    }
+
+    .aside_section_playlist {
+      display: none;
+    }
+
+    .bottom_aside_bar { 
+      display: none;
+   }
+
+   .bottom_aside_bar_xs {
+      display: block;
+      position: fixed;
+      bottom:80px;
+      left:15px;
+      & img {
+         width: 20px;
+      }
+
+      & hr {
+         display: none;
+      }
+   
+    }
+
+    .aside_download_section{
+      margin-bottom:-0.5rem ;
+    }
+
+    
+
+    .app_main_panel{
+      padding-left: 50px;
     }
    
 }
